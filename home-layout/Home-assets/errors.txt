@@ -1,7 +1,0 @@
-[2020-11-14 19:34:23] layer "+792 567 8745": Expected Either a default asset specification or a layer asset specification but "+" found.
-[2020-11-14 19:34:26] layer "contact@blueowlcreative.com": Unsupported extension: com
-[2020-11-14 19:34:26] layer "791px-Mano_cursor.svg copy": Expected end of input but "c" found.
-[2020-11-14 19:34:26] layer "791px-Mano_cursor.svg copy 2": Expected end of input but "c" found.
-[2020-11-14 19:34:26] layer "791px-Mano_cursor.svg copy 3": Expected end of input but "c" found.
-[2020-11-14 19:34:26] layer "791px-Mano_cursor.svg copy 4": Expected end of input but "c" found.
-[2020-11-14 19:34:26] layer "791px-Mano_cursor.svg copy 5": Expected end of input but "c" found.
