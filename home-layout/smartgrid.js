@@ -3,8 +3,8 @@ module.exports = {
     offset: "30px",
     // mobileFirst: true,
     container: {
-        maxWidth: "3000px",
-        fields: "81px"
+        maxWidth: "954px",
+        fields: "300px",
     },
     breakPoints: {
         ml:{

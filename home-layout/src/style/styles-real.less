@@ -2,6 +2,251 @@
   --main-orange: #bb4a1b;
   --main-bru: #7f3211;
   --main-black: #321408;
-  --main-white: #ffffff;
+  --main-white: #fffefe;
 --main-bruster: #e3d6c3;
+  --main-bl: #9e9e9e;
+}
+.reset();
+body {
+  font-weight: normal;
+  font-family: 'Noto Sans', sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  font-size: 14px;
+}
+
+
+.wrapper {
+  .wrapper();
+  .row-flex();
+}
+body:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(45deg, rgba(0,0,0,0), rgba(255,255,255,.8));
+}
+.navigation{
+  background: var(--main-orange);
+  .navigation__home{
+    display: flex;
+    flex-direction: row;
+    .navigation__home__company{
+      p{
+        font-size: 36px;
+        font-weight: bold;
+        color: var(--main-bru)
+      }
+    }
+  }
+
+}
+nav {
+  text-align: center;
+  padding: 40px 0 0;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  text-decoration: none;
+  display: block;
+  color: var(--main-white);
+}
+.topmenu > li {
+  display: inline-block;
+  position: relative;
+}
+.topmenu > li > a {
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  padding: 10px 15px;
+  font-family: 'Merriweather Sans', sans-serif;
+  line-height: 1;
+  letter-spacing: 3px;
+  color:var(--main-white);
+}
+
+.topmenu li:hover a:before {
+  transform: translate(-50%, 0);
+  opacity: 1;
+}
+.submenu {
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  top: 100%;
+  width: 150px;
+  padding: 15px 0 15px;
+  margin-top: 5px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 0 30px rgba(0,0,0,.2);
+  box-sizing: border-box;
+  visibility: hidden;
+  opacity: 0;
+  transform: translate(-50%, 20px);
+  transition: .3s;
+}
+.topmenu > li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+.submenu a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.29;
+  padding: 5px 10px;
+  transition: .2s linear;
+}
+.submenu a:hover {
+  background: var(--main-bl);
+}
+
+.slider__contrary{
+  .slider__contrary__one{
+    background: no-repeat center url("../img/layer1.png");
+    .contrary__border{
+      margin: 62px 276px 63px 21px;
+      padding: 81px 24px 79px 25px;
+      opacity: 0.5;
+      border: solid 1px #a69aa1;
+      background-color: #a69aa1;
+      .one__food{
+        .h2{
+          font-family: 'Merriweather Sans', sans-serif;
+          font-size: 36px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: var(--main-white);
+        }
+      }
+      .one__health{
+        p{
+          text-transform: uppercase;
+          font-family:'Merriweather Sans', sans-serif;
+          font-size: 24px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          color: var(--main-white);
+        }
+      }
+    }
+
+  }
+  .slider__contrary__two{
+    background:no-repeat center url("../img/layer2.png");
+    .contrary__border{
+      margin: 62px 276px 63px 21px;
+      padding: 81px 24px 79px 25px;
+      opacity: 0.5;
+      border: solid 1px #a69aa1;
+      background-color: #a69aa1;
+      .one__food{
+        .h2{
+          font-family: 'Merriweather Sans', sans-serif;
+          font-size: 36px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: var(--main-white);
+        }
+      }
+      .one__health{
+        p{
+          text-transform: uppercase;
+          font-family:'Merriweather Sans', sans-serif;
+          font-size: 24px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          color: var(--main-white);
+        }
+      }
+    }
+
+  }
+  .slider__contrary__three{
+    background: no-repeat center url("../img/layer3.png");
+    .contrary__border{
+      margin: 62px 276px 63px 21px;
+      padding: 81px 24px 79px 25px;
+      opacity: 0.5;
+      border: solid 1px #a69aa1;
+      background-color: #a69aa1;
+      .one__food{
+        .h2{
+          font-family: 'Merriweather Sans', sans-serif;
+          font-size: 36px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: var(--main-white);
+        }
+      }
+      .one__health{
+        p{
+          text-transform: uppercase;
+          font-family:'Merriweather Sans', sans-serif;
+          font-size: 24px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          color: var(--main-white);
+        }
+      }
+    }
+
+  }
+}
+.content{
+  .responsive__design{
+    .responsive__item{
+      display: flex;
+      .item__items{
+        margin: 41px 16px 40px;
+        padding: 19px 10px 56px;
+        background-color: #e3d6c3;
+        .one_img{
+          img{
+            border-radius: 50%;
+            overflow: hidden;
+            background-color: #e3d6c3
+          }
+
+        }
+      }
+    }
+  }
+}
+.portfolio__slider{
+  display: flex;
+  flex-direction: column;
 }
