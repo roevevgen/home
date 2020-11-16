@@ -1,19 +1,23 @@
+@import 'project';
 :root {
   --main-orange: #bb4a1b;
   --main-bru: #7f3211;
+  --main-bla: #333333;
   --main-black: #321408;
   --main-white: #fffefe;
---main-bruster: #e3d6c3;
+  --main-bruster: #e3d6c3;
   --main-bl: #9e9e9e;
+  --main-fon: #eae1d2;
 }
 .reset();
 body {
-  font-weight: normal;
-  font-family: 'Noto Sans', sans-serif;
-  font-stretch: normal;
-  font-style: normal;
+  font-weight: @n;
+  font-family: @ns;
+  font-stretch: @n;
+  font-style: @n;
   line-height: 1.71;
   font-size: 14px;
+  content: '';
 }
 
 
@@ -50,12 +54,12 @@ nav {
   padding: 40px 0 0;
 }
 nav ul {
-  list-style: none;
+  list-style: @no;
   margin: 0;
   padding: 0;
 }
 nav a {
-  text-decoration: none;
+  text-decoration: @no;
   display: block;
   color: var(--main-white);
 }
@@ -64,11 +68,11 @@ nav a {
   position: relative;
 }
 .topmenu > li > a {
-  text-transform: uppercase;
-  text-decoration: none;
+  text-transform: @up;
+  text-decoration: @no;
   position: relative;
   padding: 10px 15px;
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: @ms;
   line-height: 1;
   letter-spacing: 3px;
   color:var(--main-white);
@@ -101,13 +105,13 @@ nav a {
   transform: translate(-50%, 0);
 }
 .submenu a {
-  text-transform: uppercase;
-  text-decoration: none;
-  font-family: 'Merriweather Sans', sans-serif;
+  text-transform: @up;
+  text-decoration: @no;
+  font-family: @ms;
   font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
+  font-weight: @n;
+  font-stretch: @n;
+  font-style: @n;
   line-height: 2.29;
   padding: 5px 10px;
   transition: .2s linear;
@@ -127,26 +131,26 @@ nav a {
       background-color: #a69aa1;
       .one__food{
         .h2{
-          font-family: 'Merriweather Sans', sans-serif;
+          font-family: @ms;
           font-size: 36px;
           font-weight: bold;
-          font-stretch: normal;
-          font-style: normal;
-          line-height: normal;
-          letter-spacing: normal;
+          font-stretch: @n;
+          font-style: @n;
+          line-height: @n;
+          letter-spacing: @n;
           color: var(--main-white);
         }
       }
       .one__health{
         p{
-          text-transform: uppercase;
-          font-family:'Merriweather Sans', sans-serif;
+          text-transform: @up;
+          font-family:@ms;
           font-size: 24px;
-          font-weight: normal;
-          font-stretch: normal;
-          font-style: normal;
+          font-weight: @n;
+          font-stretch: @n;
+          font-style: @n;
           line-height: 1.5;
-          letter-spacing: normal;
+          letter-spacing: @n;
           color: var(--main-white);
         }
       }
@@ -163,26 +167,26 @@ nav a {
       background-color: #a69aa1;
       .one__food{
         .h2{
-          font-family: 'Merriweather Sans', sans-serif;
+          font-family: @ms;
           font-size: 36px;
           font-weight: bold;
-          font-stretch: normal;
-          font-style: normal;
-          line-height: normal;
-          letter-spacing: normal;
+          font-stretch: @n;
+          font-style: @n;
+          line-height: @n;
+          letter-spacing: @n;
           color: var(--main-white);
         }
       }
       .one__health{
         p{
-          text-transform: uppercase;
-          font-family:'Merriweather Sans', sans-serif;
+          text-transform: @up;
+          font-family:@ms;
           font-size: 24px;
-          font-weight: normal;
-          font-stretch: normal;
-          font-style: normal;
+          font-weight: @n;
+          font-stretch: @n;
+          font-style: @n;
           line-height: 1.5;
-          letter-spacing: normal;
+          letter-spacing: @n;
           color: var(--main-white);
         }
       }
@@ -199,26 +203,26 @@ nav a {
       background-color: #a69aa1;
       .one__food{
         .h2{
-          font-family: 'Merriweather Sans', sans-serif;
+          font-family: @ms;
           font-size: 36px;
           font-weight: bold;
-          font-stretch: normal;
-          font-style: normal;
-          line-height: normal;
-          letter-spacing: normal;
+          font-stretch: @n;
+          font-style: @n;
+          line-height: @n;
+          letter-spacing: @n;
           color: var(--main-white);
         }
       }
       .one__health{
         p{
-          text-transform: uppercase;
-          font-family:'Merriweather Sans', sans-serif;
+          text-transform: @up;
+          font-family:@ms;
           font-size: 24px;
-          font-weight: normal;
-          font-stretch: normal;
-          font-style: normal;
+          font-weight: @n;
+          font-stretch: @n;
+          font-style: @n;
           line-height: 1.5;
-          letter-spacing: normal;
+          letter-spacing: @n;
           color: var(--main-white);
         }
       }
@@ -228,13 +232,20 @@ nav a {
 }
 .content{
   .responsive__design{
+    background-color: #eae1d2;
     .responsive__item{
       display: flex;
       .item__items{
         margin: 41px 16px 40px;
         padding: 19px 10px 56px;
         background-color: #e3d6c3;
+        &:hover{
+          border: solid 1px #b84e1d;
+          cursor:pointer;
+        }
         .one_img{
+          display: flex;
+          justify-content: center;
           img{
             border-radius: 50%;
             overflow: hidden;
@@ -242,11 +253,115 @@ nav a {
           }
 
         }
+        .one__text{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding-top: 33px;
+          .h4{
+            font-family:@ms;
+            text-transform: @up;
+            font-size: 16px;
+            font-weight: @n;
+            font-stretch: @n;
+            font-style: @n;
+            line-height: 1.78;
+            letter-spacing: 0.45px;
+            text-align: center;
+            color: #555555;
+          }
+          p{
+            line-height: 1.86;
+            font-size: 13px;
+            letter-spacing: @n;
+            text-align: center;
+            color: #888888;
+          }
+        }
       }
     }
   }
 }
 .portfolio__slider{
+  background-color: var(--main-orange);
   display: flex;
   flex-direction: column;
+  h2{
+    padding-top: 39px;
+    padding-bottom: 19px;
+    font-family:@ms;
+    font-size: 18px;
+    font-weight: @n;
+    font-stretch: @n;
+    font-style: @n;
+    line-height: 1.78;
+    letter-spacing: 0.45px;
+    color:var(--main-white);
+  }
+  .portfolio__home{
+    display: flex;
+    flex-direction: row;
+    .portfolio__established{
+      padding-bottom: 73px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-right: 20px;
+      .established__long{
+        background-color: var(--main-bla);
+        color:var(--main-white);
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+.white__variations{
+  background-color: var(--main-fon);
+  h2{
+    padding-top: 39px;
+    text-transform: @up;
+    font-family: @ms;
+    font-size: 1.286em;
+    font-weight: @n;
+    font-stretch: @n;
+    font-style: @n;
+    line-height: 1.78;
+    letter-spacing: 0.45px;
+    color: #666666;
+  }
+  .white__variations__why{
+    box-shadow: 2.5px 4.3px 10px 0 rgba(0, 0, 0, 0.02);
+    border: solid 1px #eae1d2;
+    background-color: #f0eae0;
+    margin-top: 19px;
+    margin-bottom: 38px;
+    .white__variations__border{
+      padding: 20px 22px 22px 10px;
+      display: flex;
+      flex-direction: row;
+      .why__image{
+        .size(6);
+      }
+      .why__content{
+        .size(8);
+        h4{
+          text-transform: @up;
+          font-family: @ms;
+          font-weight: @n;
+          font-stretch: @n;
+          font-style: @n;
+          line-height: 2.29;
+          letter-spacing: 0.35px;
+          color: #666666;
+        }
+        p{
+          line-height: 1.71;
+          letter-spacing: 0.35px;
+          text-align: left;
+          color: #888888;
+        }
+      }
+    }
+  }
 }
